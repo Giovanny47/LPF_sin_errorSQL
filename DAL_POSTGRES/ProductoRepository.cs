@@ -10,9 +10,9 @@ namespace DAL_POSTGRES
 {
     public class ProductoRepository : BaseDatos
     {
-
-        DAL_POSTGRES.TiendaRepository repoTienda = new DAL_POSTGRES.TiendaRepository();
-        DAL_POSTGRES.CategoriaRepository repoCategoria = new DAL_POSTGRES.CategoriaRepository();
+        //estaba causando un stack overflow.. buscando otros
+        //DAL_POSTGRES.TiendaRepository repoTienda = new DAL_POSTGRES.TiendaRepository();
+        //DAL_POSTGRES.CategoriaRepository repoCategoria = new DAL_POSTGRES.CategoriaRepository();
 
         public List<Producto> Consultar(int Tienda_Id)
         {
@@ -43,6 +43,8 @@ namespace DAL_POSTGRES
 
         private Producto Mappear(NpgsqlDataReader reader)
         {
+            var repoTienda = new DAL_POSTGRES.TiendaRepository();
+            var repoCategoria = new DAL_POSTGRES.CategoriaRepository();
 
             Producto producto = new Producto();
 

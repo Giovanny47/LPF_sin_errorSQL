@@ -206,22 +206,31 @@ namespace GUI
 
         private void btn_registrartienda_Click(object sender, EventArgs e)
         {
-
-            if((ComprobarCampos() == false) || (Verificar_Correo(txt_correo_dueño.Text) == false))
+            
+            if ((ComprobarCampos() == false) && (Verificar_Correo(txt_correo_dueño.Text) == false))
             {
+                // 1. Guardar o buscar el barrio
+                Barrio barrio = GuardarBarrio(txt_barrio_tienda.Text);
 
-                Barrio barrio = new Barrio();
-                Tienda tienda = new Tienda();
-                Tendero tendero = new Tendero();
+                // 2. Crear la tienda asociada al barrio
+                Tienda tienda = GuardarTienda(barrio);
 
-                barrio = GuardarBarrio(txt_barrio_tienda.Text);
-                tienda = GuardarTienda(barrio);
-                tendero = GuardarTendero(tienda);
+                // 3. Crear el tendero y asociar la tienda
+                Tendero tendero = GuardarTendero(tienda);
+                tendero.Tienda = tienda; // asociando la tienda al tendero
 
-                AbrirTienda(tendero);
+                // 4. Guardar el tendero (y la tienda) en la base de datos
+                string resultado = ServicioTendero.Guardar(tendero);
 
+                
+                MessageBox.Show(resultado, "Resultado del registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+               
+                if (resultado.Contains("correctamente"))
+                {
+                    AbrirTienda(tendero);
+                }
             }
-
         }
 
     }

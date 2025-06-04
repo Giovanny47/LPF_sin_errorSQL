@@ -41,7 +41,7 @@
             this.txtContra = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.btnRegis_client = new System.Windows.Forms.Button();
             this.btn_Regis_tienda = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -193,22 +193,21 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "INICIO SESION";
             // 
-            // btnIniciar
+            // btnIniciarSesion
             // 
-            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnIniciar.FlatAppearance.BorderSize = 0;
-            this.btnIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciar.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnIniciar.Location = new System.Drawing.Point(524, 341);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(630, 40);
-            this.btnIniciar.TabIndex = 9;
-            this.btnIniciar.Text = "INICIAR SESION";
-            this.btnIniciar.UseVisualStyleBackColor = false;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            this.btnIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
+            this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnIniciarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.ForeColor = System.Drawing.Color.LightGray;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(524, 341);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(630, 40);
+            this.btnIniciarSesion.TabIndex = 9;
+            this.btnIniciarSesion.Text = "INICIAR SESION";
+            this.btnIniciarSesion.UseVisualStyleBackColor = false;
             // 
             // btnRegis_client
             // 
@@ -278,7 +277,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Regis_tienda);
             this.Controls.Add(this.btnRegis_client);
-            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.panel4);
@@ -312,7 +311,7 @@
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button btnIniciarSesion;
         private System.Windows.Forms.Button btnRegis_client;
         private System.Windows.Forms.Button btn_Regis_tienda;
         private System.Windows.Forms.Label label1;

@@ -42,8 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupUbicacion = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
             this.panelsalidas.SuspendLayout();
@@ -180,7 +180,7 @@
             this.btn_busquetiendaclient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_busquetiendaclient.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_busquetiendaclient.ForeColor = System.Drawing.Color.LightGray;
-            this.btn_busquetiendaclient.Location = new System.Drawing.Point(241, 173);
+            this.btn_busquetiendaclient.Location = new System.Drawing.Point(259, 171);
             this.btn_busquetiendaclient.Name = "btn_busquetiendaclient";
             this.btn_busquetiendaclient.Size = new System.Drawing.Size(267, 31);
             this.btn_busquetiendaclient.TabIndex = 37;
@@ -222,6 +222,13 @@
             this.textBox2.Size = new System.Drawing.Size(230, 20);
             this.textBox2.TabIndex = 43;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(296, 88);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(230, 20);
+            this.textBox1.TabIndex = 42;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -233,13 +240,6 @@
             this.label2.Size = new System.Drawing.Size(73, 25);
             this.label2.TabIndex = 41;
             this.label2.Text = "Producto:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(296, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 20);
-            this.textBox1.TabIndex = 42;
             // 
             // ubicacion_cliente
             // 

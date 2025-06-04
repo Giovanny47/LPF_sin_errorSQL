@@ -8710,7 +8710,7 @@
   <data name="btnVenta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAYAAAAYefKRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAACpBJREFUeF7tnWtMVOkdxkVug4KIA8hFLoebMFwiEC6lIoIJbmK8sbgFlLvB5SLG
+        vAAADrwBlbxySQAACpBJREFUeF7tnWtMVOkdxkVug4KIA8hFLoebMFwiEC6lIoIJbmK8sbgFlLvB5SLG
         0oGNxmLirtEqXlD2Cx9MzPqp7UdX7WbXTROTbdIv3dFt08Redq223db0kxps5/T5nzlndo4DyJpN7Zzz
         /JInZ86Zd5Tz53fe9z1zhjnLCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQggh5KWoqhrW2tqa3tHRkTMy
         MqKcOHHCNhkbG1P27dunYP+Vurq6OL0k9sblckVVVVW9UVBQMAEh7hw7duzeqVOnPHbK6dOnPSdPnvSM
@@ -8761,7 +8761,7 @@
   <data name="btnMini.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAYAAAAYefKRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAAtpJREFUeF7t2c1OWkEUwHGQj4B0pZAL1SCgQPjwIzVGjSTKwhiV+rEwDaQLpQlb
+        vAAADrwBlbxySQAAAtpJREFUeF7t2c1OWkEUwHGQj4B0pZAL1SCgQPjwIzVGjSTKwhiV+rEwDaQLpQlb
         +yZNXNrEu64P0Jq01b5E00foqjvddDM9hzANvIAL5v9LTu4wuZtzcoY7d24AAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC8yuXyy1qt1vA8L9Hr9SIyjsr02Mbt7W1UcxzK
         MygBa3JyMpNKpS4ajcb96enp73a7/Wltbe2mVCr58/PzYxm5XM7f2tryr66u/MvLS397e9vP5/PvtBaD
@@ -8779,7 +8779,7 @@
   <data name="btnMaxi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAYAAAAYefKRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAACYxJREFUeF7tmttLXFkaxdMwNpkkYFuJpVZ5ycV7aWmhxluCjJpCMMFYKSMx4uSK
+        vAAADrwBlbxySQAACYxJREFUeF7tmttLXFkaxdMwNpkkYFuJpVZ5ycV7aWmhxluCjJpCMMFYKSMx4uSK
         L7FCngKD0PkD9B/waf6FIWRekoAD6QFJ5WFoaJiH6aGhITTdj2NM25ozax33dsqanUmm4ljluH7wcS7W
         Kfdee+3v2/voISGEEEIIIYQQQgghhBBCCCGEEELsG2pqag7X1dWFKysr/QgEAn7Y64McVotMPagVNTPy
         /X+BDv46FAoNBYPB6b6+voVEIpHu6up6derUqXR1dXX65MmTaZ4rtvSAEdK1tbW+RpOTk+mBgYFFmGUi
@@ -8826,7 +8826,7 @@
   <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAYAAAAYefKRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAB0VJREFUeF7tnNluFFcQhjGYzUYExHJhMDY7BsvjsYAYjFnGLMYCLLgGRYKXiAR3
+        vAAADrwBlbxySQAAB0VJREFUeF7tnNluFFcQhjGYzUYExHJhMDY7BsvjsYAYjFnGLMYCLLgGRYKXiAR3
         ybvwBjzBjC0hxBtEuYV7rpCSSX09U60hhBCMPV7yfdJRL+f0oqm/q+qc09ObRERERERERERERERERERE
         REREREREREREREREREREREREREREREREREREREREREREVp3enTt3Du4J2turBvfAvcRqb2uPrAoDAwOD
         O3bseN7T0/N269atL6vV6tN9+/aNtKu7xsTExAjX5h5i822U51EQiKwCPSGKF9u2bfsYBmnG9p/Hjh37

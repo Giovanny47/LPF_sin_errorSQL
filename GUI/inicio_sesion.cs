@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Logica;
 
+
 namespace GUI
 {
 
@@ -96,91 +97,55 @@ namespace GUI
 
         private Cliente InicioSesionCliente(string Email, string password)
         {
-
-            Cliente cliente = new Cliente();
-
-            if(ServicioCliente.BuscarCliente(Email) != null)
+            var cliente = ServicioCliente.BuscarCliente(Email);
+            if (cliente != null)
             {
-
-                cliente = ServicioCliente.BuscarCliente(Email);
-
                 if (cliente.Password == password)
-                {
                     return cliente;
-                }
-                else
-                {
-                    MessageBox.Show("Contraseña incorrecta", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
+                MessageBox.Show("Contraseña incorrecta", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
             return null;
-
         }
-
-
 
         private Tendero InicioSesionTendero(string Email, string password)
         {
-
-            Tendero tendero = new Tendero();
-
-            if (ServicioTendero.BuscarTendero(Email) != null)
+            var tendero = ServicioTendero.BuscarTendero(Email);
+            if (tendero != null)
             {
-
-                tendero = ServicioTendero.BuscarTendero(Email);
-
                 if (tendero.Password == password)
-                {
                     return tendero;
-                }
-                else
-                {
-                    MessageBox.Show("Contraseña incorrecta", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Contraseña incorrecta", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return null;
         }
 
-
-
         private void IniciarSesion(string Email, string password)
         {
-
-            if (InicioSesionCliente(Email, password) != null)
+            var cliente = InicioSesionCliente(Email, password);
+            if (cliente != null)
             {
-                Cliente cliente = new Cliente();
-                cliente = InicioSesionCliente(Email, password);
-
-                ubicacion_cliente ubicacionCliente = new ubicacion_cliente(InicioSesionCliente(Email, password));
+                var ubicacionCliente = new ubicacion_cliente(cliente);
                 ubicacionCliente.Show();
                 this.Hide();
-
+                return;
             }
-            else if (InicioSesionTendero(Email, password) != null)
-            {
-                Tendero tendero = new Tendero();
-                tendero = InicioSesionTendero(Email, password);
 
-                gestion_tienda gestionTienda = new gestion_tienda(tendero);
+            var tendero = InicioSesionTendero(Email, password);
+            if (tendero != null)
+            {
+                var gestionTienda = new gestion_tienda(tendero);
                 gestionTienda.Show();
                 this.Hide();
-
+                return;
             }
-            else
-            {
-                MessageBox.Show("Usuario no encontrado. De no tener una cuenta, por favor registrarse.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
+            MessageBox.Show("Usuario no encontrado. De no tener una cuenta, por favor registrarse.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }                   
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-
-            IniciarSesion(txtUser.Text.ToLower(), txtContra.Text.ToLower());
-
+                    // Solo el correo en minúsculas, la contraseña se respeta tal cual
+                    IniciarSesion(txtUser.Text.ToLower(), txtContra.Text);
         }
-
     }
 }

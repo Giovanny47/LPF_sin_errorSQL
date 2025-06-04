@@ -10,10 +10,6 @@ namespace DAL_POSTGRES
 {
     public class TiendaRepository : BaseDatos
     {
-
-        DAL_POSTGRES.BarrioRepository repoBarrio = new BarrioRepository();
-        DAL_POSTGRES.ProductoRepository repoProducto = new ProductoRepository();
-
         public List<Tienda> BuscarTiendasPorBarrio(int Barrio_id)
         {
 
@@ -64,12 +60,10 @@ namespace DAL_POSTGRES
             return lista;
         }
 
-
-
-
-
         private Tienda Mappear(NpgsqlDataReader reader)
         {
+            var repoBarrio = new BarrioRepository();
+            var repoProducto = new ProductoRepository();
 
             Tienda tienda = new Tienda();
 
@@ -84,8 +78,6 @@ namespace DAL_POSTGRES
             
             return tienda;
         }
-
-
 
         public string Eliminar(int id)
         {

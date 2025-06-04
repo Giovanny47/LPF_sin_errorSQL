@@ -22,6 +22,10 @@ namespace GUI
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
         }
 
+        public ubicacion_cliente()
+        {
+        }
+
         private void btnVenta_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;

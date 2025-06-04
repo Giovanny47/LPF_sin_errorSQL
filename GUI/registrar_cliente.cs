@@ -95,22 +95,20 @@ namespace GUI
 
         private void btn_registrarclient_Click(object sender, EventArgs e)
         {
-
-            Cliente cliente = new Cliente();
-
             if ((Comprobar_Campos() == false) && (Verificar_Correo(txt_correoclient.Text) == false))
             {
+                Cliente cliente = Guardar_Cliente();
+                string resultado = ServicioCliente.Guardar(cliente);
 
-                cliente = Guardar_Cliente();
-                
-                ServicioCliente.Guardar(cliente);
+                MessageBox.Show(resultado, "Resultado del registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                ubicacion_cliente Ucliente = new ubicacion_cliente(cliente);
-                Ucliente.Show();
-                this.Hide();
-
+                if (resultado.Contains("correctamente"))
+                {
+                    ubicacion_cliente Ucliente = new ubicacion_cliente(cliente);
+                    Ucliente.Show();
+                    this.Hide();
+                }
             }
-
         }
 
 
@@ -131,14 +129,11 @@ namespace GUI
         private Cliente Guardar_Cliente()
         {
             Cliente cliente = new Cliente();
-
-            cliente.Id = 1;
             cliente.Nombre = txt_nombreclient.Text;
             cliente.Apellido = txt_apellidoclient.Text;
             cliente.Email = txt_correoclient.Text;
             cliente.Telefono = txt_telefonoclient.Text;
             cliente.Password = txt_contraclient.Text;
-
             return cliente;
         }
 

@@ -79,16 +79,6 @@ namespace GUI
             }
         }
 
-        private void btn_irtienda_Click(object sender, EventArgs e)
-        {
-            var resultado = MessageBox.Show("¿Desea ir a buscar tienda?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resultado == DialogResult.Yes)
-            {
-                //mostramos el formulario de login y cerramos este
-                inicio_sesion inicio = new inicio_sesion();
-                inicio.Show();
-                this.Close();
-            }
-        }
+       
     }
 }

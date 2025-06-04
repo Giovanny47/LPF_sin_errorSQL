@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DAL_POSTGRES
 {
     public class BaseDatos
@@ -29,7 +30,7 @@ namespace DAL_POSTGRES
                 conexion.Close();
 
             }
-            conexion.Open();
+                conexion.Open();
             return conexion.State;
         }
 

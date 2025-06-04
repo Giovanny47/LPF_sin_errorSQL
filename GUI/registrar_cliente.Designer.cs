@@ -187,7 +187,7 @@
             this.btn_cancelar_registro.Name = "btn_cancelar_registro";
             this.btn_cancelar_registro.Size = new System.Drawing.Size(258, 40);
             this.btn_cancelar_registro.TabIndex = 32;
-            this.btn_cancelar_registro.Text = "CANCELAR REGISTRO";
+            this.btn_cancelar_registro.Text = "SALIR ";
             this.btn_cancelar_registro.UseVisualStyleBackColor = false;
             this.btn_cancelar_registro.Click += new System.EventHandler(this.btn_cancelar_registro_Click);
             // 
