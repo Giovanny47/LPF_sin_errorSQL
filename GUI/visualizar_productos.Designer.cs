@@ -1,0 +1,121 @@
+﻿namespace GUI
+{
+    partial class visualizar_productos
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.DataProductos = new System.Windows.Forms.DataGridView();
+            this.Nombre_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DataProductos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // DataProductos
+            // 
+            this.DataProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.DataProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nombre_producto,
+            this.Categoria_producto,
+            this.Precio_producto,
+            this.Cantidad_producto});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataProductos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DataProductos.EnableHeadersVisualStyles = false;
+            this.DataProductos.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.DataProductos.Location = new System.Drawing.Point(33, 25);
+            this.DataProductos.Name = "DataProductos";
+            this.DataProductos.Size = new System.Drawing.Size(705, 267);
+            this.DataProductos.TabIndex = 17;
+            // 
+            // Nombre_producto
+            // 
+            this.Nombre_producto.HeaderText = "Nombre";
+            this.Nombre_producto.Name = "Nombre_producto";
+            // 
+            // Categoria_producto
+            // 
+            this.Categoria_producto.HeaderText = "Categoria";
+            this.Categoria_producto.Name = "Categoria_producto";
+            // 
+            // Precio_producto
+            // 
+            this.Precio_producto.HeaderText = "Precio";
+            this.Precio_producto.Name = "Precio_producto";
+            // 
+            // Cantidad_producto
+            // 
+            this.Cantidad_producto.HeaderText = "Stock";
+            this.Cantidad_producto.Name = "Cantidad_producto";
+            // 
+            // visualizar_productos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(750, 450);
+            this.Controls.Add(this.DataProductos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "visualizar_productos";
+            this.Text = "visualizar_productos";
+            ((System.ComponentModel.ISupportInitialize)(this.DataProductos)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView DataProductos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria_producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio_producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_producto;
+    }
+}
