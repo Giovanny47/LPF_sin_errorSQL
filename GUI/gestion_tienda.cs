@@ -13,8 +13,11 @@ namespace GUI
 {
     public partial class gestion_tienda : Form
     {
+        private Tendero tendero;
+
         public gestion_tienda(Tendero tendero)
         {
+            this.tendero = tendero;
 
             InitializeComponent();
             var ruta = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "img", "fondo_tienda.png");
@@ -91,12 +94,13 @@ namespace GUI
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new agregar_productos());
+            AbrirFormHija(new agregar_productos(tendero.Tienda));
         }
 
         private void btn_verproduct_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new visualizar_productos());
+            int tiendaId = tendero.Tienda.Id; // Usamos la propiedad Id de la tienda
+            AbrirFormHija(new visualizar_productos(tiendaId));
         }
 
         private void btnSalirTienda_Click(object sender, EventArgs e)

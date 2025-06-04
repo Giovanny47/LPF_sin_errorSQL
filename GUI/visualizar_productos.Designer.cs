@@ -31,10 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataProductos = new System.Windows.Forms.DataGridView();
-            this.Nombre_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +51,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DataProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre_producto,
-            this.Categoria_producto,
-            this.Precio_producto,
-            this.Cantidad_producto});
+            // No agregues columnas manualmente aquí
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HotTrack;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,26 +66,6 @@
             this.DataProductos.Name = "DataProductos";
             this.DataProductos.Size = new System.Drawing.Size(705, 267);
             this.DataProductos.TabIndex = 17;
-            // 
-            // Nombre_producto
-            // 
-            this.Nombre_producto.HeaderText = "Nombre";
-            this.Nombre_producto.Name = "Nombre_producto";
-            // 
-            // Categoria_producto
-            // 
-            this.Categoria_producto.HeaderText = "Categoria";
-            this.Categoria_producto.Name = "Categoria_producto";
-            // 
-            // Precio_producto
-            // 
-            this.Precio_producto.HeaderText = "Precio";
-            this.Precio_producto.Name = "Precio_producto";
-            // 
-            // Cantidad_producto
-            // 
-            this.Cantidad_producto.HeaderText = "Stock";
-            this.Cantidad_producto.Name = "Cantidad_producto";
             // 
             // visualizar_productos
             // 
@@ -113,9 +85,5 @@
         #endregion
 
         private System.Windows.Forms.DataGridView DataProductos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria_producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio_producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_producto;
-    }
+        }
 }

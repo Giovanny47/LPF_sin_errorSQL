@@ -23,6 +23,11 @@ namespace Logica
             return repoProducto.Consultar(Tienda_id);
         }
 
+        public List<Producto> ObtenerTodos(int tiendaId)
+        {
+            return Consultar(tiendaId);
+        }
+
         public string Guardar(Producto entity)
         {
             try
